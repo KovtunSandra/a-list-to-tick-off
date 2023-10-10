@@ -1,0 +1,42 @@
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+      background-color: skyblue;
+      height: 100vh;
+      width: 100vw;
+}
+.content {
+      height: 400px;
+      background-color: white;
+      padding: 60px 80px;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+}
+ul {
+      list-style-type: none;
+}
+h1 {
+      margin-bottom: 50px;
+      text-transform: uppercase;
+}
+li {
+      margin-bottom: 30px;
+}
+input[type=checkbox] {
+      display: none;
+}
+input[type=checkbox]+span {
+      background: url('./star.png') left top no-repeat;
+      background-size: 20px 18px;
+      height: 30px;
+      padding-left: 30px;
+}
+input[type=checkbox]:checked+span {
+      background-image: url('./star2.png');
+      text-decoration: line-through;
+      color: gray;
+}
